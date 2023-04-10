@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<!-- doctype: document type - khai báo kiểu tài liệu cho trình duyệt của bạn hiểu được phiên bản html bạn đang sử dụng -->
+<!-- doctype luôn được khai báo đầu tiên -->
+<!-- các trình duyệt khác nhau đọc doctype và hiểu được phiên bản trình duyệt để đưa ra cách xử lý giống nhau -->
+<html lang="en">
+    <!-- thẻ html là thành phần ngay sau doctype -->
+    <!-- trong 1 file html chỉ có duy nhất 1 thẻ html thôi, và nó chứa tất cả nội dung trang web -->
+    <!-- khuyến nghị sử dụng thêm thuộc tính lang - ngôn ngữ để trình duyệt hiểu được bạn đang sử dụng ngôn ngữ gì -->
+<head>
+    <!-- thẻ head là nơi chứa các thẻ meta - thẻ meta dùng để cung cấp thêm các thông tin phục vụ cho việc mô tả hiển thị website -->
+    <!-- ví dụ: cung cấp tiêu đề website hiển thị trên thanh tag trình duyệt -->
+    <!-- cung cấp các đường link tới các file CSS -->
+    <!-- thẻ head là thẻ con trực tiếp - thẻ con và không bị trung gian quan thẻ cha nào khác - của thẻ html -->
+
+    <meta charset="UTF-8">
+    <!-- cần được khai báo ở vị trí đầu tiên trong thẻ Head -->
+    <!-- khai báo bảng mã ký tự được sử dụng: yêu cầu trình duyệt sử dụng bảng mã này cho việc hiển thị các ký tự -->
+    <!-- bảng mã UTF-8 là bảng mã phổ biến nhất trên thế giới -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- thẻ meta viewport được sử dụng để tối ưu hoá hiển thị giao diện web trên các ứng dụng khác nhau: ví dụ điện thoại, ipad,.. -->
+    <!-- width=device-width để yêu cầu đặt chiều rộng của trang web bằng với chiều rộng của thiết bị-->
+    <!-- initial-scale=1.0 là để giá trị khi lần đầu tiên truy cập bằng thiết bị di động thì mặc định nó ở tỉ lệ chuẩn của trang web -->
+
+    <title>Hightlight code</title>
+    <!-- thẻ meta title: thuộc nhóm thẻ meta  -->
+    <!-- nội dung ở thẻ title sẽ được trình duyệt sử dụng để hiển thị trên thanh tag của trình duyệt và sử dụng trên công cụ tìm kiếm -->
+
+    <!-- Thẻ link sử dụng để liên kết tài nguyên từ bên ngoài vào link html, sử dụng để link favicon  -->
+    <link rel="icon" href="/favicon.ico/favicon-16x16.png">
+
+
+    <!-- Bước 1: Nhúng code CSS của PrismJS -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
+
+    <!-- Sử dụng thẻ link để tạo kết nối trước nhằm tối ưu thời gian tải tài nguyên từ 1 nguồn khác trang web -->
+    <!-- thẻ link sử dụng rel="preconnect" -->
+    <!-- Khi trình duyệt đọc preconnect - nó sẽ hiểu chúng ta muốn tạo 1 kết nối ưu tiên - tiết kiệm được bước phân giải dns -> tls -->
+    <!-- Ứng dụng để tiết kiệm thời gian phân giải dns khi muốn sử dụng tài nguyên từ 1 nguồn khác -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Tham gia cộng đồng học viên F8 trên Facebook</h2>
+    <p>Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham gia hỏi đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.</p>
+    <a href="https://www.facebook.com/groups/f8official">Tham gia nhóm</a>
+    
+</body>
+</html>
